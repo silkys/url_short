@@ -1,0 +1,8 @@
+<div>
+  <!-- Include UrlInputComponent and listen for the custom event -->
+  <app-url-input (shortenClicked)="onShortenClicked($event)"></app-url-input>
+</div>
+<div>
+  <!-- Display the shortened URLs -->
+  <app-url-display [shortenedUrls]="shortenedUrls"></app-url-display>
+</div>
